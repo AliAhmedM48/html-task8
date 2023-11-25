@@ -1,0 +1,1100 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- ! -->
+    <!-- #region Keep in mind ABOUT META TAGS -->
+    <!-- ! If you don’t want to display your web page in search results at all, -->
+    <!-- ! just add this meta tag inside your head section: -->
+    <!-- ! ----- <meta name="robots" content="none" /> ---- -->
+    <!-- *** -->
+    <!-- ! Because the keywords meta tag was so often abused, -->
+    <!-- ! many years ago Google began disregarding the keywords meta tag. -->
+    <!-- #endregion -->
+
+    <!-- * meta tag | open graph -->
+    <!-- #region Open Graph Tag -->
+    <!-- ! Facebook will use open graph to display information if your content is shared. -->
+    <!-- ! Whatsapp doesn't support picture with a size greater than 300KB. -->
+
+    <meta property="og:url" content="www.MrAli.com" />
+    <meta property="og:type" content="Personal Portfolio Website" />
+
+    <meta property="og:title" content="MrAli | Energized by engineering, passionate about web development." />
+    <meta property="og:site_name" content="MrAli" />
+
+    <meta property="og:description"
+        content="Fullstack Developer - Building websites from scratch using popular tools and languages." />
+
+    <meta property="og:image" content="https://i.ibb.co/NYzz25f/d0232072-c9e4-4c07-9514-35aae99881f3.png" />
+    <meta property="og:image:type" content="image/png" />
+    <meta property="og:image:alt" content="Never Give Up!" />
+
+    <!-- <meta property="og:video"
+        content="https://aliahmedm48.github.io/html-task1/videos/fun.mp4?namePrefix=&fname=&lname=&email=&password=&birthday=&birthcountry=%D8%A7%D9%84%D9%82%D8%A7%D9%87%D8%B1%D8%A9&phone=&linkedinURL=&from=07%3A00%3A00&to=15%3A00%3A00&from=07%3A00%3A00&to=15%3A00%3A00&TimeManagement=70&Communication=50&Problem-solving=70&color=%23000000&SharingInfo=&submit=Submit+without+HTML+validation" />
+    <meta property="og:video:type" content="video/mp4" />
+
+    <meta property="og:video:width" content="640" />
+    <meta property="og:video:height" content="360" /> -->
+    <!-- #endregion -->
+    <!-- * meta tag | charset-->
+    <!-- #region Char Set -->
+    <meta charset="UTF-8" />
+    <!-- #endregion -->
+    <!-- * meta tag | viewport-->
+    <!-- #region View Port -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- #endregion -->
+    <!-- * meta tag | description-->
+    <!-- #region Description Meta Tag -->
+    <!-- ! Google will keep the first 150-160 characters of your meta description, and cut the rest. -->
+    <meta name="description" content="Daniels is a responsive creative template." />
+    <!-- #endregion -->
+    <!-- * meta tag | keywords-->
+    <!-- #region keywords Meta Tag -->
+    <meta name="keywords" content="portfolio, personal, corporate, business, parallax, creative, agency">
+    <!-- #endregion -->
+
+    <!-- ^ web page title tag-->
+    <!-- #region Title -->
+    <!-- ! Google will only display the first 50-60 characters of your title, and cut the rest. -->
+    <!-- ! So long as you fit the important information before the cut-off point. ​-->
+    <title>Daniels | MrAli</title>
+    <!-- #endregion -->
+    <!-- ^ favicon link-->
+    <!-- #region Fav icon -->
+    <link rel="shortcut icon" href="assets/images/favicon.ico" type="image/x-icon">
+    <!-- #endregion -->
+    <!-- ^ Google Fonts Links-->
+    <!-- #region Google Fonts -->
+    <!-- font-family: 'Montserrat', sans-serif; -->
+    <!-- font-family: 'Poppins', sans-serif; -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,900&display=swap"
+        rel="stylesheet">
+    <!-- #endregion -->
+    <!-- ^ Iconmoon File "icons"-->
+    <!-- #region Icons -->
+    <link rel="stylesheet" href="assets/css/iconmoon.css">
+    <!-- #endregion -->
+    <!-- ^ Owl Carousel CSS File-->
+    <!-- #region Owl Carousel CSS-->
+    <link rel="stylesheet" href="assets/css/owl.carousel.min.css" />
+    <link rel="stylesheet" href="assets/css/owl.theme.default.min.css" />
+    <!-- #endregion -->
+    <!-- ^ Bootstrap CSS File-->
+    <!-- #region Bootstrap CSS-->
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css" />
+    <!-- #endregion -->
+    <!-- ^ Style CSS File-->
+    <!-- #region Main Style CSS-->
+    <link rel="stylesheet" href="assets/css/style.css" />
+    <!-- #endregion -->
+</head>
+
+
+<body>
+    <!-- * Popup container -->
+    <div class="Popup-container">
+        <!-- #region Popup container -->
+        <div id="popup1">
+            <!-- Your popup content (e.g., gallery images) goes here -->
+            <img class="img-fluid" src="assets/images/portfolio/1.jpg" alt="Gallery Image">
+            <div>
+                <a href="assets/images/portfolio/1.jpg" download="portfolio-img-1" class="btn btn-success">Download</a>
+                <button id="closeBtn" onclick="closePopup1()" class="btn btn-danger">Close</button>
+            </div>
+        </div>
+        <div id="popup2">
+            <!-- Your popup content (e.g., gallery images) goes here -->
+            <img class="img-fluid" src="assets/images/portfolio/2.jpg" alt="Gallery Image">
+            <div>
+                <a href="assets/images/portfolio/2.jpg" download="portfolio-img-2" class="btn btn-success">Download</a>
+                <button id="closeBtn" onclick="closePopup2()" class="btn btn-danger">Close</button>
+            </div>
+        </div>
+        <div id="popup3">
+            <!-- Your popup content (e.g., gallery images) goes here -->
+            <img class="img-fluid" src="assets/images/portfolio/3.jpg" alt="Gallery Image">
+            <div>
+                <a href="assets/images/portfolio/3.jpg" download="portfolio-img-3" class="btn btn-success">Download</a>
+                <button id="closeBtn" onclick="closePopup3()" class="btn btn-danger">Close</button>
+            </div>
+        </div>
+        <div id="popup4">
+            <!-- Your popup content (e.g., gallery images) goes here -->
+            <img class="img-fluid" src="assets/images/portfolio/4.jpg" alt="Gallery Image">
+            <div>
+                <a href="assets/images/portfolio/4.jpg" download="portfolio-img-4" class="btn btn-success">Download</a>
+                <button id="closeBtn" onclick="closePopup4()" class="btn btn-danger">Close</button>
+            </div>
+        </div>
+        <div id="popup5">
+            <!-- Your popup content (e.g., gallery images) goes here -->
+            <img class="img-fluid" src="assets/images/portfolio/5.jpg" alt="Gallery Image">
+            <div>
+                <a href="assets/images/portfolio/5.jpg" download="portfolio-img-5" class="btn btn-success">Download</a>
+                <button id="closeBtn" onclick="closePopup5()" class="btn btn-danger">Close</button>
+            </div>
+        </div>
+        <div id="popup6">
+            <!-- Your popup content (e.g., gallery images) goes here -->
+            <img class="img-fluid" src="assets/images/portfolio/6.jpg" alt="Gallery Image">
+            <div>
+                <a href="assets/images/portfolio/6.jpg" download="portfolio-img-6" class="btn btn-success">Download</a>
+                <button id="closeBtn" onclick="closePopup6()" class="btn btn-danger">Close</button>
+            </div>
+        </div>
+        <!-- #endregion -->
+    </div>
+
+    <div id="blur" data-bs-spy="scroll" data-bs-target="#scroll-spy">
+
+        <!-- & ===========> #[Navbar Section]# -->
+        <nav id="navbar" class="navbar navbar-expand-lg  bg-transparent">
+            <!-- #region navbar-->
+            <div class="container">
+                <h1><a class="navbar-brand logo" href="index.html">DANIELS</a></h1>
+
+                <button data-bs-auto-close="outside" class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="true"
+                    aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <div class="collapse navbar-collapse" id="navbarNavDropdown" data-bs-auto-close="outside">
+                    <ul id="scroll-spy" class="navbar-nav ms-auto" data-bs-auto-close="outside">
+                        <!-- #region navbar-nav list -->
+                        <li class="nav-item">
+                            <a class="nav-link active" href="#home">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#about">About</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#services">Services</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#portfolio">Works</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#testimonials">Clients</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#our-team">Team</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#contact-us">Contact</a>
+                        </li>
+                        <!-- #endregion -->
+                    </ul>
+                </div>
+            </div>
+            <!-- #endregion -->
+        </nav>
+
+        <header id="home" class="home">
+            <!-- #region home -->
+
+            <div class="parallax-section">
+                <div class="container ">
+                    <div class="row">
+                        <div class="col-12">
+                            <div class="caption">
+                                <!-- #region home caption -->
+                                <h3>Hello</h3>
+                                <h2 class="cd-headline rotate-1">
+                                    <span>I Am</span>
+                                    <span class="element"></span>
+                                </h2>
+                                <!-- ^ social icons -->
+                                <div class="social-icon">
+                                    <!-- #region social icons -->
+                                    <a href="https://www.fb.com/" target="_blank">
+                                        <span><i class="icon-facebook" aria-hidden="true"></i></span>
+                                    </a>
+                                    <a href="https://www.twitter.com/" target="_blank">
+                                        <span><i class="icon-twitter" aria-hidden="true"></i></span>
+                                    </a>
+                                    <a href="https://www.linkedin.com/in/" target="_blank">
+                                        <span><i class="icon-linkedin" aria-hidden="true"></i></span>
+                                    </a>
+                                    <a href="https://www.behance.net/" target="_blank">
+                                        <span><i class="icon-behance" aria-hidden="true"></i></span>
+                                    </a>
+                                    <a href="https://www.youtube.com/" target="_blank">
+                                        <span><i class="icon-youtube" aria-hidden="true"></i></span>
+                                    </a>
+                                    <!-- #endregion -->
+                                </div>
+                                <!-- #endregion -->
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- #endregion -->
+        </header>
+        <main>
+
+            <!-- ^ about section-->
+            <section id="about" class="about section-padding ">
+                <!-- #region about section-->
+                <div class="container">
+                    <div class="row">
+
+                        <!-- ^ img -->
+                        <div class="col-md-5">
+                            <div class="frame mb-5 ps-4">
+                                <img class="img-fluid" src="assets/images/hero.jpg" alt="profile picture">
+                            </div>
+                        </div>
+
+                        <!-- ^ caption -->
+                        <div class="col-md-7">
+                            <div class="caption">
+                                <h2>About Me.</h2>
+                                <!-- #region about me-->
+                                <span>UI / UX DESIGNER & WEB DEVELOPER</span>
+                                <p>I am <b>Jerry Daniels</b> Lorem Ipsum is simply dummy text of the printing and
+                                    typesetting
+                                    industry.
+                                    Lorem Ipsum has been the industry's standard dummy text ever It has survived not
+                                    only
+                                    five
+                                    centuries, but also the leap into electronic but also the leap into electronic
+                                    typesetting,
+                                    remaining essentially unchanged. It was popularised in the 1960s with the release of
+                                    Letraset sheets containing.</p>
+                                <div class="skills">
+                                    <!-- #region skills -->
+                                    <div class="progress" role="progressbar" aria-label="Web Design" aria-valuenow="25"
+                                        aria-valuemin="0" aria-valuemax="100">
+                                        <div class="progress-bar" style="width: 95%">
+                                            <h3>Web Design</h3>
+                                            <span>25%</span>
+                                        </div>
+                                    </div>
+                                    <div class="progress" role="progressbar" aria-label="Brading" aria-valuenow="25"
+                                        aria-valuemin="0" aria-valuemax="100">
+                                        <div class="progress-bar" style="width: 80%">
+                                            <h3>Brading</h3>
+                                            <span>80%</span>
+                                        </div>
+                                    </div>
+                                    <div class="progress" role="progressbar" aria-label="Development" aria-valuenow="25"
+                                        aria-valuemin="0" aria-valuemax="100">
+                                        <div class="progress-bar" style="width: 90%">
+                                            <h3>Development</h3>
+                                            <span>90%</span>
+                                        </div>
+                                    </div>
+                                    <!-- #endregion -->
+                                </div>
+                                <a href="assets/downloads/New Text Document.txt" download="MrAli_CV">
+                                    <span class="btn btn-bg">Download C.V</span>
+                                </a>
+                                <a href="#0">
+                                    <span class="btn">Contact Me</span>
+                                </a>
+                                <!-- #endregion -->
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+                <!-- #endregion -->
+            </section>
+
+            <!-- ^ services section-->
+            <section id="services" class="services section-padding bg-gray text-center ">
+                <!-- #region services section-->
+                <div class="container">
+                    <h2 class="section-title">Services.</h2>
+                    <div class="row">
+                        <div class="col-md-6 col-lg-4">
+                            <div class="item ">
+                                <span class="icon">
+                                    <i class="icon-laptop"></i>
+                                </span>
+                                <h3>Web Desgin</h3>
+                                <p>Lorem Ipsum is simply dummy text of the Lorem Ipsum has been the industry's standard
+                                    dummy text ever</p>
+                            </div>
+                        </div>
+                        <div class="col-md-6 col-lg-4">
+                            <div class="item ">
+                                <span class="icon">
+                                    <i class="icon-bullhorn"></i>
+                                </span>
+                                <h3>Branding</h3>
+                                <p>Lorem Ipsum is simply dummy text of the Lorem Ipsum has been the industry's standard
+                                    dummy text ever</p>
+                            </div>
+                        </div>
+                        <div class="col-md-6 col-lg-4">
+                            <div class="item ">
+                                <span class="icon">
+                                    <i class="icon-umbrella"></i>
+                                </span>
+                                <h3>Development</h3>
+                                <p>Lorem Ipsum is simply dummy text of the Lorem Ipsum has been the industry's standard
+                                    dummy text ever</p>
+                            </div>
+                        </div>
+                        <div class="col-md-6 col-lg-4">
+                            <div class="item ">
+                                <span class="icon">
+                                    <i class="icon-diamond"></i>
+                                </span>
+                                <h3>Creative Design</h3>
+                                <p>Lorem Ipsum is simply dummy text of the Lorem Ipsum has been the industry's standard
+                                    dummy text ever</p>
+                            </div>
+                        </div>
+                        <div class="col-md-6 col-lg-4">
+                            <div class="item ">
+                                <span class="icon">
+                                    <i class="icon-television"></i>
+                                </span>
+                                <h3>Fully Responsive</h3>
+                                <p>Lorem Ipsum is simply dummy text of the Lorem Ipsum has been the industry's standard
+                                    dummy text ever</p>
+                            </div>
+                        </div>
+                        <div class="col-md-6 col-lg-4">
+                            <div class="item ">
+                                <span class="icon">
+                                    <i class="icon-camera"></i>
+                                </span>
+                                <h3>Retina Ready</h3>
+                                <p>Lorem Ipsum is simply dummy text of the Lorem Ipsum has been the industry's standard
+                                    dummy text ever</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- #endregion -->
+            </section>
+
+            <!-- ^ portfolio section-->
+            <section id="portfolio" class="portfolio section-padding text-center ">
+                <!-- #region portfolio section-->
+                <div class="container">
+                    <div class="row">
+
+                        <h2 class="section-title">Portfolio.</h2>
+                        <ul class="nav-list filtering ">
+                            <span onclick="filterItems('all')" class="active" data-filter="*">All</span>
+                            <span onclick="filterItems('brand')" data-filter=".brand">Brand</span>
+                            <span onclick="filterItems('web')" data-filter=".web">Design</span>
+                            <span onclick="filterItems('graphic')" data-filter=".graphic">Graphic</span>
+                        </ul>
+                        <div>
+                            <div id="galleary" class="row gallery">
+                                <div class="col-md-4 items item-p-m graphic">
+                                    <div class="item">
+                                        <img class="img-fluid" src="assets/images/portfolio/1.jpg" alt="portfolio 1">
+
+                                        <div class="overlayer ">
+                                            <h3>WEB DESIGN</h3>
+                                            <div class="icons">
+                                                <span class="icon">
+                                                    <a onclick="copylink1('portfolio 1')">
+                                                        <i class="icon-chain-broken"></i>
+                                                    </a>
+                                                </span>
+                                                <span class="icon">
+                                                    <!-- Button to open the popup -->
+                                                    <a href="#0" onclick="openPopup1()"> <i
+                                                            class="icon-search-plus"></i>
+                                                    </a>
+                                                </span>
+                                            </div>
+                                            <p id="alert-dark1" class="alert alert-dark position-absolute bottom-0 ">
+                                                Link copied to clipboard</p>
+
+                                            <p id="alert-danger1"
+                                                class="alert alert-danger position-absolute bottom-0 ">
+                                                Unable to copy to clipboard</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-4   items item-p-m web">
+                                    <div class="item">
+                                        <img class="img-fluid" src="assets/images/portfolio/2.jpg" alt="portfolio 2">
+                                        <div class="overlayer">
+                                            <h3>WEB DESIGN</h3>
+                                            <div class="icons">
+                                                <span class="icon">
+
+                                                    <a onclick="copylink2('portfolio 2')">
+                                                        <i class="icon-chain-broken"></i>
+                                                    </a>
+                                                </span>
+                                                <span class="icon">
+                                                    <a href="#0" onclick="openPopup2()"> <i
+                                                            class="icon-search-plus"></i>
+                                                    </a>
+                                                </span>
+                                            </div>
+                                            <p id="alert-dark2" class="alert alert-dark position-absolute bottom-0 ">
+                                                Link copied to clipboard</p>
+
+                                            <p id="alert-danger2"
+                                                class="alert alert-danger position-absolute bottom-0 ">
+                                                Unable to copy to clipboard</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-4   items item-p-m graphic">
+
+                                    <div class="item">
+                                        <img class="img-fluid" src="assets/images/portfolio/3.jpg" alt="portfolio 3">
+                                        <div class="overlayer">
+                                            <h3>WEB DESIGN</h3>
+                                            <div class="icons">
+                                                <span class="icon">
+
+                                                    <a onclick="copylink3('portfolio 3')">
+                                                        <i class="icon-chain-broken"></i>
+                                                    </a>
+                                                </span>
+                                                <span class="icon">
+                                                    <a href="#0" onclick="openPopup3()"> <i
+                                                            class="icon-search-plus"></i>
+                                                    </a>
+                                                </span>
+                                            </div>
+                                            <p id="alert-dark3" class="alert alert-dark position-absolute bottom-0 ">
+                                                Link copied to clipboard</p>
+
+                                            <p id="alert-danger3"
+                                                class="alert alert-danger position-absolute bottom-0 ">
+                                                Unable to copy to clipboard</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-4   items item-p-m brand">
+                                    <div class="item">
+                                        <img class="img-fluid" src="assets/images/portfolio/4.jpg" alt="portfolio 4">
+                                        <div class="overlayer">
+                                            <h3>WEB DESIGN</h3>
+                                            <div class="icons">
+                                                <span class="icon">
+                                                    <a onclick="copylink4('portfolio 4')">
+                                                        <i class="icon-chain-broken"></i>
+                                                    </a>
+                                                </span>
+
+                                                <span class="icon">
+                                                    <a href="#0" onclick="openPopup4()">
+                                                        <i class="icon-search-plus"></i>
+                                                    </a>
+                                                </span>
+                                            </div>
+                                            <p id="alert-dark4" class="alert alert-dark position-absolute bottom-0 ">
+                                                Link copied to clipboard</p>
+
+                                            <p id="alert-danger4"
+                                                class="alert alert-danger position-absolute bottom-0 ">
+                                                Unable to copy to clipboard</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-4 items item-p-m web graphic">
+                                    <div class="item">
+                                        <img class="img-fluid" src="assets/images/portfolio/5.jpg" alt="portfolio 5">
+                                        <div class="overlayer">
+                                            <h3>WEB DESIGN</h3>
+                                            <div class="icons">
+                                                <span class="icon">
+                                                    <a onclick="copylink5('portfolio 5')">
+                                                        <i class="icon-chain-broken"></i>
+                                                    </a>
+                                                </span>
+                                                <span class="icon">
+                                                    <a href="#0" onclick="openPopup5()">
+                                                        <i class="icon-search-plus"></i>
+                                                    </a>
+                                                </span>
+                                            </div>
+                                            <p id="alert-dark5" class="alert alert-dark position-absolute bottom-0 ">
+                                                Link copied to clipboard</p>
+
+                                            <p id="alert-danger5"
+                                                class="alert alert-danger position-absolute bottom-0 ">
+                                                Unable to copy to clipboard</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-4   items item-p-m brand">
+                                    <div class="item">
+                                        <img class="img-fluid" src="assets/images/portfolio/6.jpg" alt="portfolio 6">
+                                        <div class="overlayer">
+                                            <h3>WEB DESIGN</h3>
+                                            <div class="icons">
+                                                <span class="icon">
+                                                    <a onclick="copylink6('portfolio 6')">
+                                                        <i class="icon-chain-broken"></i>
+                                                    </a>
+                                                </span>
+                                                <span class="icon">
+                                                    <a href="#0" onclick="openPopup6()">
+                                                        <i class="icon-search-plus"></i>
+                                                    </a>
+                                                </span>
+                                            </div>
+                                            <p id="alert-dark6" class="alert alert-dark position-absolute bottom-0 ">
+                                                Link copied to clipboard</p>
+
+                                            <p id="alert-danger6"
+                                                class="alert alert-danger position-absolute bottom-0 ">
+                                                Unable to copy to clipboard</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+                <!-- #endregion -->
+            </section>
+
+            <!-- ^ testimonials section-->
+            <section id="testimonials" class="testimonials section-padding bg-gray text-center ">
+                <!-- #region testimonials section-->
+                <div class="container">
+                    <div class="row">
+                        <h2 class="section-title">Testimonials.</h2>
+                        <div class="col-12">
+                            <div class="owl-carousel owl-theme">
+                                <!-- Testimonial 1 -->
+                                <div class="testimonial">
+
+                                    <div class="frame">
+                                        <img class="img-fluid" src="assets/images/testi-1.jpg" alt="testi-1">
+                                    </div>
+                                    <p>
+                                        The marketing strategies provided by this team have significantly boosted our
+                                        online
+                                        presence. The results speak for themselves, and I couldn't be happier with the
+                                        collaboration.
+                                    </p>
+                                    <h3>Sarah Johnson</h3>
+                                    <span>Marketing Manager</span>
+
+                                </div>
+
+                                <!-- Testimonial 2 -->
+                                <div class="testimonial">
+
+                                    <div class="frame">
+                                        <img class="img-fluid" src="assets/images/testi-2.jpg" alt="testi-2">
+                                    </div>
+                                    <p>
+                                        Working with this company has been a game-changer for our business. The
+                                        innovative
+                                        solutions and dedicated support have propelled us to new heights. Highly
+                                        recommended!
+                                    </p>
+                                    <h3>Robert Hernandez</h3>
+                                    <span>CEO & Founder</span>
+
+                                </div>
+                                <!-- Testimonial 3 -->
+                                <div class="testimonial">
+
+                                    <div class="frame">
+                                        <img class="img-fluid" src="assets/images/testi-3.jpg" alt="testi-3">
+                                    </div>
+                                    <p>
+                                        As a designer, attention to detail is crucial. The seamless user experience
+                                        created
+                                        by this team exceeded my expectations. Their commitment to quality is truly
+                                        commendable.
+                                    </p>
+                                    <h3>Emily Patel</h3>
+                                    <span>UX/UI Designer</span>
+                                </div>
+
+                            </div>
+                        </div>
+
+
+                    </div>
+                </div>
+                <!-- #endregion -->
+            </section>
+
+            <!-- ^ numbers section-->
+            <section id="numbers " class="numbers  section-padding text-center ">
+                <!-- #region numbers  section-->
+                <div class="container">
+                    <div class="row">
+                        <div class="col-sm-6 col-md-3">
+                            <div class="item">
+                                <span class="icon">
+                                    <i class="icon-users"></i>
+                                </span>
+                                <h3 class="counter">850</h3>
+                                <p>Happy Customers</p>
+                            </div>
+                        </div>
+                        <div class="col-sm-6 col-md-3">
+                            <div class="item">
+                                <span class="icon">
+                                    <i class="icon-thumbs-up"></i>
+                                </span>
+                                <h3 class="counter">230</h3>
+                                <p>Complete Projects</p>
+                            </div>
+                        </div>
+                        <div class="col-sm-6 col-md-3">
+                            <div class="item">
+                                <span class="icon">
+                                    <i class="icon-bullhorn"></i>
+                                </span>
+                                <h3 class="counter">9450</h3>
+                                <p>Lines Of Code</p>
+                            </div>
+                        </div>
+                        <div class="col-sm-6 col-md-3">
+                            <div class="item">
+                                <span class="icon">
+                                    <i class="icon-cloud-download"></i>
+                                </span>
+                                <h3 class="counter">780</h3>
+                                <p>Files Downloaded</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- #endregion -->
+            </section>
+
+            <!-- ^ our team section-->
+            <section id="our-team" class="our-team  section-padding bg-gray text-center ">
+                <!-- #region our team section-->
+                <div class="container">
+                    <h2 class="section-title">Our Team.</h2>
+                    <div class="row">
+                        <div class="col-md-4">
+                            <div class="team-card rounded">
+                                <div class="frame">
+                                    <img class="img-fluid" src="assets/images/1.jpg" alt="">
+                                    <div class="overlayer">
+                                        <span class="icon">
+                                            <a href="https://www.facebook.com/" target="_blank">
+                                                <i class="icon-facebook"></i>
+                                            </a>
+                                        </span>
+                                        <span class="icon">
+                                            <a href="https://www.twitter.com/" target="_blank">
+                                                <i class="icon-twitter"></i>
+                                            </a>
+                                        </span>
+                                        <span class="icon">
+                                            <a href="https://www.pinterest.com/" target="_blank">
+                                                <i class="icon-pinterest"></i>
+                                            </a>
+                                        </span>
+                                        <span class="icon">
+                                            <a href="https://www.linkedin.com/" target="_blank">
+                                                <i class="icon-linkedin"></i>
+                                            </a>
+                                        </span>
+
+                                    </div>
+
+                                </div>
+                                <div class="img-text rounded overflow-hidden">
+                                    <h3 class="fs-4">John Doe</h3>
+                                    <h4 class="fs-6">FRONT-END DEVELOPER</h4>
+                                </div>
+                            </div>
+
+                        </div>
+                        <div class="col-md-4">
+                            <div class="team-card rounded">
+                                <div class="frame">
+                                    <img class="img-fluid" src="assets/images/2.jpg" alt="">
+                                    <div class="overlayer">
+                                        <span class="icon">
+                                            <a href="https://www.facebook.com/" target="_blank">
+                                                <i class="icon-facebook"></i>
+                                            </a>
+                                        </span>
+                                        <span class="icon">
+                                            <a href="https://www.twitter.com/" target="_blank">
+                                                <i class="icon-twitter"></i>
+                                            </a>
+                                        </span>
+                                        <span class="icon">
+                                            <a href="https://www.pinterest.com/" target="_blank">
+                                                <i class="icon-pinterest"></i>
+                                            </a>
+                                        </span>
+                                        <span class="icon">
+                                            <a href="https://www.linkedin.com/" target="_blank">
+                                                <i class="icon-linkedin"></i>
+                                            </a>
+                                        </span>
+
+                                    </div>
+
+                                </div>
+                                <div class="img-text rounded overflow-hidden">
+                                    <h3 class="fs-4">Dave Wood</h3>
+                                    <h4 class="fs-6">BACK-END DEVELOPER</h4>
+                                </div>
+                            </div>
+
+                        </div>
+                        <div class="col-md-4">
+                            <div class="team-card rounded">
+                                <div class="frame">
+                                    <img class="img-fluid" src="assets/images/1_New1.jpg" alt="">
+                                    <div class="overlayer">
+                                        <span class="icon">
+                                            <a href="https://www.facebook.com/" target="_blank">
+                                                <i class="icon-facebook"></i>
+                                            </a>
+                                        </span>
+                                        <span class="icon">
+                                            <a href="https://www.twitter.com/" target="_blank">
+                                                <i class="icon-twitter"></i>
+                                            </a>
+                                        </span>
+                                        <span class="icon">
+                                            <a href="https://www.pinterest.com/" target="_blank">
+                                                <i class="icon-pinterest"></i>
+                                            </a>
+                                        </span>
+                                        <span class="icon">
+                                            <a href="https://www.linkedin.com/" target="_blank">
+                                                <i class="icon-linkedin"></i>
+                                            </a>
+                                        </span>
+
+                                    </div>
+
+                                </div>
+                                <div class="img-text rounded overflow-hidden">
+                                    <h3 class="fs-4">Claire Chedd</h3>
+                                    <h4 class="fs-6">FULLSTACK DEVELOPER</h4>
+                                </div>
+                            </div>
+
+                        </div>
+
+
+                    </div>
+                </div>
+                <!-- #endregion -->
+            </section>
+
+            <!-- ^ Contact Us section-->
+            <section id="contact-us" class="contact-us  section-padding  text-center ">
+                <!-- #region Contact Us section-->
+                <div class="container">
+                    <h2 class="section-title">Contact Us.</h2>
+                    <div class="row">
+                        <div class="col-md-4">
+                            <div class="item">
+                                <span class="icon"><i class="icon-location-arrow" aria-hidden="true"></i></span>
+                                <h6>Address</h6>
+                                <p>6834 Hollywood Blvd - Los Angeles CA</p>
+                            </div>
+                        </div>
+
+                        <div class="col-md-4">
+                            <div class="item">
+                                <span class="icon"><i class="icon-envelope" aria-hidden="true"></i></span>
+                                <h6>Email</h6>
+                                <p>Support@website.com</p>
+                            </div>
+                        </div>
+
+                        <div class="col-md-4">
+                            <div class="item">
+                                <span class="icon"><i class="icon-phone" aria-hidden="true"></i></span>
+                                <h6>Phone</h6>
+                                <p>+20 010 2517 8918</p>
+                            </div>
+                        </div>
+
+                        <form class="form col-12" id="contact-form" method="get" action="index.html" target="_blank"
+                            novalidate>
+                            <div class="row">
+
+                                <div class="col-md-6 ">
+                                    <div class="form-group">
+                                        <input id="form_name" type="text" name="name" placeholder="Name" required>
+                                    </div>
+                                </div>
+
+                                <div class="col-md-6 ">
+                                    <div class="form-group">
+                                        <input id="form_email" type="email" name="email" placeholder="Email" required>
+                                    </div>
+                                </div>
+
+                                <div class="col-md-12 text-start">
+                                    <div class="form-group">
+                                        <textarea id="form_message" name="message" placeholder="Message" rows="4"
+                                            required></textarea>
+                                    </div>
+
+                                    <input type="submit" value="Submit" class="buton">
+                                </div>
+
+                            </div>
+
+                        </form>
+
+                    </div>
+                </div>
+                <!-- #endregion -->
+            </section>
+
+
+
+        </main>
+        <!-- ^ Footer section-->
+        <footer id="footer" class="footer  text-center ">
+            <!-- #region Footer section-->
+            <div class="container">
+                <div class="row">
+                    <div class="container text-center">
+                        <div class="row">
+                            <p>Copy Right 2023 © By Daniels All Rights Reserved</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- #endregion -->
+        </footer>
+
+    </div>
+
+    <!-- ^ jQuery -->
+    <!-- <script src="https://code.jquery.com/jquery-3.0.0.min.js"></script> -->
+    <!-- <script src="https://code.jquery.com/jquery-migrate-3.0.0.min.js"></script> -->
+
+
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"
+        integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+
+
+
+
+    <!-- ^ isotope.pkgd.min js -->
+    <script src="assets/js/isotope.pkgd.min.js"></script>
+    <!-- ^ Owl Carousel JavaScript -->
+    <script src="assets/js/owl.carousel.min.js"></script>
+    <!-- ^ Animated Headlines -->
+    <script src="assets/js/animated.headline.js"></script>
+    <!-- ^ STELLAR.JS -->
+    <script src="assets/js/jquery.stellar.min.js"></script>
+    <!-- ^ Typed.JS -->
+    <!-- #region Typed.js -->
+    <!-- Load library from the CDN -->
+    <script src="assets/js/typed.umd.js"></script>
+    <!-- Setup and start animation! -->
+    <script>
+        var typed = new Typed('.element', {
+            strings: ['Jerry Daniels', 'Designer', 'Developer', 'Freelancer'],
+            // stringsElement: null,
+            // time before typing starts
+            // startDelay: 1200,
+            // typing speed
+            typeSpeed: 100,
+            // time before backspacing
+            // backDelay: 30,
+            // backspacing speed
+            backSpeed: 50,
+            // loop
+            loop: true,
+            // false = infinite
+            // loopCount: 10,
+            // show cursor
+            // showCursor: true,
+            // character for cursor
+            cursorChar: " |",
+            // shuffle: true,
+            // smartBackspace: false,
+            // attribute to type (null == text)
+            // attr: null,
+            // either html or text
+            // contentType: 'html',
+            // call when done callback function
+            callback: function () { },
+            // starting callback function before each string
+            preStringTyped: function () { },
+            //callback for every typed string
+            onStringTyped: function () { },
+            // callback for reset
+            resetCallback: function () { }
+        });
+    </script>
+    <!-- #endregion -->
+    <!-- ^ jquery.waypoints.min js -->
+    <script src="assets/js/jquery.waypoints.min.js"></script>
+    <!-- ^ jquery.counterup.min js -->
+    <script src="assets/js/jquery.counterup.min.js"></script>
+    <!-- ^ Bootstrap JS File-->
+    <script src="assets/js/bootstrap.bundle.min.js"></script>
+
+
+    <script src="assets/js/main.js"></script>
+
+    <script>
+        //#region pop1
+        function openPopup1() {
+            // Add the 'blur' class to the body
+            // document.body.classList.add('blur');
+            var blur = document.getElementById('blur');
+            blur.classList.toggle('active');
+
+            // Add the 'no-scroll' class to the body to disable scrolling
+            document.body.classList.add('no-scroll');
+            // Display the popup
+            document.getElementById('popup1').style.display = 'block';
+        }
+
+        function closePopup1() {
+            // Remove the 'blur' class from the body
+            var blur = document.getElementById('blur');
+            blur.classList.toggle('active');
+            // Remove the 'no-scroll' class from the body to enable scrolling
+            document.body.classList.remove('no-scroll');
+            // Hide the popup
+            document.getElementById('popup1').style.display = 'none';
+        }
+        //#endregion
+        // ----------------
+        //#region pop2
+        function openPopup2() {
+            // Add the 'blur' class to the body
+            // document.body.classList.add('blur');
+            var blur = document.getElementById('blur');
+            blur.classList.toggle('active');
+
+            // Add the 'no-scroll' class to the body to disable scrolling
+            document.body.classList.add('no-scroll');
+            // Display the popup
+            document.getElementById('popup2').style.display = 'block';
+        }
+        function closePopup2() {
+            // Remove the 'blur' class from the body
+            var blur = document.getElementById('blur');
+            blur.classList.toggle('active');
+            // Remove the 'no-scroll' class from the body to enable scrolling
+            document.body.classList.remove('no-scroll');
+            // Hide the popup
+            document.getElementById('popup2').style.display = 'none';
+        }
+        //#endregion
+        // ----------------
+        //#region pop3
+        function openPopup3() {
+            // Add the 'blur' class to the body
+            // document.body.classList.add('blur');
+            var blur = document.getElementById('blur');
+            blur.classList.toggle('active');
+
+            // Add the 'no-scroll' class to the body to disable scrolling
+            document.body.classList.add('no-scroll');
+            // Display the popup
+            document.getElementById('popup3').style.display = 'block';
+        }
+        function closePopup3() {
+            // Remove the 'blur' class from the body
+            var blur = document.getElementById('blur');
+            blur.classList.toggle('active');
+            // Remove the 'no-scroll' class from the body to enable scrolling
+            document.body.classList.remove('no-scroll');
+            // Hide the popup
+            document.getElementById('popup3').style.display = 'none';
+        }
+        //#endregion
+        // ----------------
+        //#region pop4
+        function openPopup4() {
+            // Add the 'blur' class to the body
+            // document.body.classList.add('blur');
+            var blur = document.getElementById('blur');
+            blur.classList.toggle('active');
+
+            // Add the 'no-scroll' class to the body to disable scrolling
+            document.body.classList.add('no-scroll');
+            // Display the popup
+            document.getElementById('popup4').style.display = 'block';
+        }
+        function closePopup4() {
+            // Remove the 'blur' class from the body
+            var blur = document.getElementById('blur');
+            blur.classList.toggle('active');
+            // Remove the 'no-scroll' class from the body to enable scrolling
+            document.body.classList.remove('no-scroll');
+            // Hide the popup
+            document.getElementById('popup4').style.display = 'none';
+        }
+        //#endregion
+        // ----------------
+        //#region pop5
+        function openPopup5() {
+            // Add the 'blur' class to the body
+            // document.body.classList.add('blur');
+            var blur = document.getElementById('blur');
+            blur.classList.toggle('active');
+
+            // Add the 'no-scroll' class to the body to disable scrolling
+            document.body.classList.add('no-scroll');
+            // Display the popup
+            document.getElementById('popup5').style.display = 'block';
+        }
+        function closePopup5() {
+            // Remove the 'blur' class from the body
+            var blur = document.getElementById('blur');
+            blur.classList.toggle('active');
+            // Remove the 'no-scroll' class from the body to enable scrolling
+            document.body.classList.remove('no-scroll');
+            // Hide the popup
+            document.getElementById('popup5').style.display = 'none';
+        }
+        //#endregion
+        // ----------------
+        //#region pop6
+        function openPopup6() {
+            // Add the 'blur' class to the body
+            // document.body.classList.add('blur');
+            var blur = document.getElementById('blur');
+            blur.classList.toggle('active');
+
+            // Add the 'no-scroll' class to the body to disable scrolling
+            document.body.classList.add('no-scroll');
+            // Display the popup
+            document.getElementById('popup6').style.display = 'block';
+        }
+        function closePopup6() {
+            // Remove the 'blur' class from the body
+            var blur = document.getElementById('blur');
+            blur.classList.toggle('active');
+            // Remove the 'no-scroll' class from the body to enable scrolling
+            document.body.classList.remove('no-scroll');
+            // Hide the popup
+            document.getElementById('popup6').style.display = 'none';
+        }
+        //#endregion
+
+    </script>
+
+</body>
+
+</html>
