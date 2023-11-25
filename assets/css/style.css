@@ -1,5 +1,112 @@
-/* #region Customizing A Scrollbar Design */
 /*^========> Customize Scrollbar <========*/
+/* #region loading screen */
+
+
+.loading {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 9999999999999;
+    background: black;
+    /* width: 100%; */
+    /* height: 100%; */
+    padding: 10px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-flow: column;
+    height: 100%;
+}
+
+.loading:after,
+.loading:before {
+    content: "";
+    background: #fff;
+    height: 50%;
+    width: 100%;
+    position: absolute;
+    left: 0;
+    transition: all 1s;
+}
+
+.loading:after {
+    top: 0;
+}
+
+.loading:before {
+    bottom: 0;
+}
+
+.loading-end:after {
+    top: -60%;
+}
+
+.loading-end:before {
+    bottom: -60%;
+}
+
+.load-circle {
+    color: white;
+    font-size: clamp(100px, 60vw, 10px) !important;
+    animation-name: hi-animation;
+    animation-duration: 5s;
+    animation-delay: 1s;
+    opacity: 0;
+    --sccal: 1.2;
+
+}
+
+.waving:before {
+    content: attr(data-hover);
+}
+
+
+
+@keyframes hi-animation {
+    0% {
+        transform: scale(1);
+        opacity: 1;
+    }
+
+    5% {
+        transform: scale(var(--sccal));
+    }
+
+    80% {
+        transform: scale(1);
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 0;
+    }
+}
+
+@media screen and (min-width:2000px) {
+    .load-circle {
+        --sccal: 5;
+    }
+
+}
+
+
+.loading h1 {
+    color: white;
+    font-family: 'Poppins', sans-serif;
+    font-size: 2rem;
+    opacity: 0.3;
+    letter-spacing: 5px;
+}
+
+
+/* #endregion */
+
+
+
+/*^========> Customize Scrollbar <========*/
+/* #region Customizing A Scrollbar Design */
 ::-webkit-scrollbar {
     background: #000;
     /* border-left: 100px solid #eee; */
@@ -15,6 +122,8 @@
 
 /* #endregion */
 
+/* ^ general styling */
+/* #region general styling */
 
 * {
     -webkit-box-sizing: border-box;
@@ -73,7 +182,10 @@ img {
     width: 100%;
 }
 
-/* ^ classes */
+/* #endregion */
+
+/* ^ reusable classes */
+/* #region reusable classes */
 .section-padding {
     padding-block: 100px 70px;
 }
@@ -107,10 +219,12 @@ img {
     background: #f7f7f7;
 }
 
+/* #endregion */
+
 /* ^ Navbar section */
 /* #region navbar */
 .navbar {
-    /* padding: 20px 0 30px; */
+    padding: 20px 0 30px;
     position: absolute;
     top: 0;
     left: 0;
@@ -135,14 +249,17 @@ img {
 /* #endregion */
 
 /* #region nav link */
+
 .navbar .navbar-nav>li {
     font-size: 16px;
     padding-inline: 10px;
 }
 
-.navbar .navbar-nav>li>a {
+.navbar .navbar-nav>li>a,
+.navbar .navbar-nav>li>a.active,
+.navbar .navbar-nav>li>a.show {
     padding-inline: 0 !important;
-    color: #fff !important;
+    color: #fff;
     position: relative;
 }
 
@@ -165,6 +282,8 @@ img {
 
 
 /* #endregion */
+
+
 
 /* ! during scrolling */
 /* #region during scrolling */
@@ -195,7 +314,65 @@ img {
     background: #222;
 }
 
+.nav-scroll .navbar-toggler {
+    color: black;
+}
+
 /* #endregion */
+
+
+
+
+/* ! during collapsing */
+.navbar-toggler {
+    border: none;
+    color: white;
+}
+
+.navbar-toggler:focus {
+    box-shadow: none;
+}
+
+/* #region collapse navbar media query */
+
+@media screen and (max-width:767.5px) {
+    .navbar .navbar-collapse {
+        background: #fff;
+        border-top: 1px solid rgba(12, 12, 12, 0.04);
+        margin-top: 5px !important;
+        padding-bottom: 15px !important;
+    }
+
+    .navbar .navbar-nav>li>a,
+    .navbar .navbar-nav>li>a.active,
+    .navbar .navbar-nav>li>a.show {
+        color: black;
+        width: fit-content;
+        margin: auto;
+    }
+
+    .navbar .navbar-nav>li>a:after {
+        background: #000;
+    }
+
+    .navbar .container {
+        max-width: 100%;
+        --bs-gutter-x: 0;
+        --bs-gutter-y: 0;
+    }
+
+    .navbar .container .logo {
+        margin-left: 1.5rem;
+    }
+
+    .navbar .container .navbar-toggler {
+        margin-right: 1.5rem;
+    }
+}
+
+/* #endregion */
+
+
 /* #endregion */
 
 /* ^ home section */
@@ -229,16 +406,28 @@ img {
 }
 
 .home .caption h3 {
-    font-size: 50px;
+    font-size: 1.5rem;
     font-weight: 800;
     margin-bottom: 10px;
 }
 
 .home .caption h2 {
     font-weight: 200;
-    font-size: 60px;
-    ;
+    font-size: 2rem;
 }
+
+@media only screen and (min-width: 991px) {
+    .home .caption h3 {
+        font-size: 3rem;
+    }
+
+    .home .caption h2 {
+        font-size: 4.5rem;
+        font-weight: 300;
+    }
+}
+
+
 
 .home .caption h2 span {
     display: inline-block;
@@ -267,6 +456,8 @@ img {
     border-radius: 50%;
     background: rgba(0, 0, 0, 1);
 }
+
+
 
 /* #endregion */
 
@@ -540,26 +731,130 @@ img {
 }
 
 
+/* ! popup screen for portfolio section */
+/* #region popup screen */
 
-/* 
-.portfolio #gallery {
-    transition: transform 0.3s ease-in-out;
+
+/* Apply blur effect to the entire page */
+#blur.active {
+    filter: blur(5px);
+    pointer-events: none;
+    user-select: none;
+    z-index: -500;
+    /* Prevents interaction with blurred content */
+}
+
+/* Disable scrolling */
+body.no-scroll {
+    overflow: hidden;
+}
+
+
+/* Style for the popup */
+#popup1,
+#popup2,
+#popup3,
+#popup4,
+#popup5,
+#popup6 {
+    display: none;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 20px;
+    background-color: white;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    z-index: 1000 !important;
+}
+
+#popup1 img,
+#popup2 img,
+#popup3 img,
+#popup4 img,
+#popup5 img,
+#popup6 img {
+    user-select: none;
+}
+
+#popup1>div,
+#popup2>div,
+#popup3>div,
+#popup4>div,
+#popup5>div,
+#popup6>div {
     display: flex;
-    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 20px;
+    gap: 10px;
 }
 
-.portfolio .items {
-    position: relative !important;
+#popup1>div>button,
+#popup2>div>button,
+#popup3>div>button,
+#popup4>div>button,
+#popup5>div>button,
+#popup6>div>button,
 
-    opacity: 1;
-    transition: opacity 0.3s ease-in-out;
+#popup1>div>a,
+#popup2>div>a,
+#popup3>div>a,
+#popup4>div>a,
+#popup5>div>a,
+#popup6>div>a {
+    cursor: pointer;
+    padding: 10px 30px;
+    border: 1px solid #1c1c1c;
+    border-radius: 5px;
+    font-size: 13px;
+    transition: all 0.5s;
+    width: calc(100% / 2);
 }
 
-.hidden {
-    height: 0 !important;
-    opacity: 0 !important;
-    overflow: hidden !important;
-} */
+#popup1>div>a,
+#popup2>div>a,
+#popup3>div>a,
+#popup4>div>a,
+#popup5>div>a,
+#popup6>div>a {
+    background: #1c1c1c;
+    color: #eee;
+
+}
+
+#popup1>div>a:hover,
+#popup2>div>a:hover,
+#popup3>div>a:hover,
+#popup4>div>a:hover,
+#popup5>div>a:hover,
+#popup6>div>a:hover {
+    background: transparent !important;
+    color: #343434 !important;
+}
+
+#popup1>div>button,
+#popup2>div>button,
+#popup3>div>button,
+#popup4>div>button,
+#popup5>div>button,
+#popup6>div>button {
+    background: transparent;
+    color: black;
+}
+
+#popup1>div>button:hover,
+#popup2>div>button:hover,
+#popup3>div>button:hover,
+#popup4>div>button:hover,
+#popup5>div>button:hover,
+#popup6>div>button:hover {
+    background: #1c1c1c;
+    color: #eee;
+}
+
+/* #endregion */
+
 
 /* #endregion */
 
@@ -793,130 +1088,5 @@ img {
 }
 
 /* #endregion */
-
-/* ! popup screen for portfolio section */
-/* #region popup screen */
-
-
-/* Apply blur effect to the entire page */
-#blur.active {
-    filter: blur(5px);
-    pointer-events: none;
-    user-select: none;
-    z-index: -500;
-    /* Prevents interaction with blurred content */
-}
-
-/* Disable scrolling */
-body.no-scroll {
-    overflow: hidden;
-}
-
-
-/* Style for the popup */
-#popup1,
-#popup2,
-#popup3,
-#popup4,
-#popup5,
-#popup6 {
-    display: none;
-    position: fixed;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    padding: 20px;
-    background-color: white;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
-    z-index: 1000 !important;
-}
-
-#popup1 img,
-#popup2 img,
-#popup3 img,
-#popup4 img,
-#popup5 img,
-#popup6 img {
-    user-select: none;
-}
-
-#popup1>div,
-#popup2>div,
-#popup3>div,
-#popup4>div,
-#popup5>div,
-#popup6>div {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    margin-top: 20px;
-    gap: 10px;
-}
-
-#popup1>div>button,
-#popup2>div>button,
-#popup3>div>button,
-#popup4>div>button,
-#popup5>div>button,
-#popup6>div>button,
-
-#popup1>div>a,
-#popup2>div>a,
-#popup3>div>a,
-#popup4>div>a,
-#popup5>div>a,
-#popup6>div>a {
-    cursor: pointer;
-    padding: 10px 30px;
-    border: 1px solid #1c1c1c;
-    border-radius: 5px;
-    font-size: 13px;
-    transition: all 0.5s;
-    width: calc(100% / 2);
-}
-
-#popup1>div>a,
-#popup2>div>a,
-#popup3>div>a,
-#popup4>div>a,
-#popup5>div>a,
-#popup6>div>a {
-    background: #1c1c1c;
-    color: #eee;
-
-}
-
-#popup1>div>a:hover,
-#popup2>div>a:hover,
-#popup3>div>a:hover,
-#popup4>div>a:hover,
-#popup5>div>a:hover,
-#popup6>div>a:hover {
-    background: transparent !important;
-    color: #343434 !important;
-}
-
-#popup1>div>button,
-#popup2>div>button,
-#popup3>div>button,
-#popup4>div>button,
-#popup5>div>button,
-#popup6>div>button {
-    background: transparent;
-    color: black;
-}
-
-#popup1>div>button:hover,
-#popup2>div>button:hover,
-#popup3>div>button:hover,
-#popup4>div>button:hover,
-#popup5>div>button:hover,
-#popup6>div>button:hover {
-    background: #1c1c1c;
-    color: #eee;
-}
-
-/* #endregion */
-
 
 /* ! end */

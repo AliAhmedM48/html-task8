@@ -26,128 +26,132 @@
   -moz-osx-font-smoothing: grayscale;
 }
 
+.icon-menu:before {
+  content: "\e901";
+}
+
 .icon-envelope:before {
   content: "\e900";
 }
 
 .icon-cloud-download:before {
-  content: "\e901";
-}
-
-.icon-search-plus:before {
   content: "\e902";
 }
 
-.icon-location-arrow:before {
+.icon-search-plus:before {
   content: "\e903";
 }
 
+.icon-location-arrow:before {
+  content: "\e904";
+}
+
 .icon-chain-broken:before {
-  content: "\e904";
-}
-
-.icon-unlink:before {
-  content: "\e904";
-}
-
-.icon-umbrella:before {
   content: "\e905";
 }
 
-.icon-behance:before {
+.icon-unlink:before {
+  content: "\e905";
+}
+
+.icon-umbrella:before {
   content: "\e906";
 }
 
-.icon-pinterest-p:before {
+.icon-behance:before {
   content: "\e907";
 }
 
-.icon-pinterest:before {
+.icon-pinterest-p:before {
   content: "\e908";
 }
 
-.icon-camera:before {
+.icon-pinterest:before {
   content: "\e909";
 }
 
-.icon-bullhorn:before {
+.icon-camera:before {
   content: "\e90a";
 }
 
-.icon-linkedin:before {
+.icon-bullhorn:before {
   content: "\e90b";
 }
 
-.icon-phone:before {
+.icon-linkedin:before {
   content: "\e90c";
 }
 
-.icon-thumbs-o-up:before {
+.icon-phone:before {
   content: "\e90d";
 }
 
-.icon-thumbs-up:before {
+.icon-thumbs-o-up:before {
   content: "\e90e";
 }
 
+.icon-thumbs-up:before {
+  content: "\e90f";
+}
+
 .icon-television:before {
-  content: "\e90f";
-}
-
-.icon-tv:before {
-  content: "\e90f";
-}
-
-.icon-laptop:before {
   content: "\e910";
 }
 
-.icon-twitter:before {
+.icon-tv:before {
+  content: "\e910";
+}
+
+.icon-laptop:before {
   content: "\e911";
 }
 
-.icon-envelope-o:before {
+.icon-twitter:before {
   content: "\e912";
 }
 
-.icon-envelope1:before {
+.icon-envelope-o:before {
   content: "\e913";
 }
 
+.icon-envelope1:before {
+  content: "\e914";
+}
+
 .icon-group:before {
-  content: "\e914";
-}
-
-.icon-users:before {
-  content: "\e914";
-}
-
-.icon-diamond:before {
   content: "\e915";
 }
 
-.icon-youtube:before {
+.icon-users:before {
+  content: "\e915";
+}
+
+.icon-diamond:before {
   content: "\e916";
 }
 
+.icon-youtube:before {
+  content: "\e917";
+}
+
 .icon-facebook:before {
-  content: "\e917";
-}
-
-.icon-facebook-f:before {
-  content: "\e917";
-}
-
-.icon-envelope2:before {
   content: "\e918";
 }
 
-.icon-cloud-download1:before {
+.icon-facebook-f:before {
+  content: "\e918";
+}
+
+.icon-envelope2:before {
   content: "\e919";
 }
 
-.icon-search-plus1:before {
+.icon-cloud-download1:before {
   content: "\e91a";
+}
+
+.icon-search-plus1:before {
+  content: "\e91b";
 }
 
 .icon-cloud-check:before {
